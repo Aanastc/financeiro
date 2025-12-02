@@ -1,162 +1,95 @@
-# Sistema de Controle Financeiro
+# 🌟 Sistema de Controle Financeiro Pessoal (Portfólio)
 
-Sistema completo de controle financeiro pessoal desenvolvido com React, Vite, Tailwind CSS e banco de dados local (IndexedDB via Dexie.js).
+Sistema completo de controle financeiro pessoal, desenvolvido como um projeto robusto de portfólio. A aplicação utiliza **React, Vite, Tailwind CSS e IndexedDB** para oferecer uma experiência de gestão financeira completa e responsiva, focada na regra 50/30/20.
 
-## 🚀 Tecnologias
+> 🔗 **Acesse o Projeto Online:** [](https://vercel.com/ana-leticias-projects-198dfb27/financeiro/7mfVTE3GsnhJfAjLKJD6uuFYdaTR)
+>
+> 💡 **Status do Projeto:** Em Desenvolvimento (WIP) – Funcionalidades robustas concluídas, com algumas em produção para demonstrar a arquitetura completa.
 
-- **React JS** com Vite
-- **Tailwind CSS** para estilização
-- **React Router DOM** com Outlet para navegação
-- **date-fns** para manipulação de datas
-- **Phosphor Icons** para ícones
-- **Dexie.js** para banco de dados local (IndexedDB)
+## 🎯 Visão Geral do Projeto
 
-## ✨ Funcionalidades
+Este projeto foi desenvolvido para demonstrar proficiência em tecnologias modernas de frontend (React/Vite) e gerenciamento de estado e dados complexos (IndexedDB via Dexie.js). O foco é oferecer uma ferramenta completa para a gestão financeira pessoal, integrando a regra 50/30/20 e sinalização visual para auxiliar o usuário na tomada de decisões.
 
-### 1. Autenticação
-- ✅ Login com email e senha
-- ✅ Cadastro de usuário
-- ✅ Logout
-- ✅ Proteção de rotas
 
-### 2. Dashboard
-- ✅ Indicadores principais (entradas, saídas, saldo)
-- ✅ Relatório 50/30/20 com sinalização de cores
-- ✅ Listas de últimas entradas e saídas
-- ✅ Média de gastos por categoria
-- ✅ Filtros por mês/ano
 
-### 3. Entradas
-- ✅ Tabela mensal com todos os meses do ano
-- ✅ Total mensal e média anual
-- ✅ Modal para adicionar/editar entradas
-- ✅ Filtros avançados (mês, ano, categoria, valor, data, busca)
+## 🚀 Tecnologias Utilizadas
 
-### 4. Gastos
-- ✅ Três categorias: Fixos, Variáveis e Extras
-- ✅ Integração com regra 50/30/20
-- ✅ Sinalização visual de excesso/abaixo do limite
-- ✅ Filtros por categoria, mês, ano, valor, data, limite 50/30/20
+### Frontend & Core
+* **React JS** com Vite
+* **Tailwind CSS** para estilização e design responsivo
+* **React Router DOM** para navegação (utilizando `Outlet`)
+* **date-fns** para manipulação eficiente de datas
+* **Phosphor Icons** para ícones
+* **Dexie.js** para persistência de dados local (IndexedDB)
 
-### 5. Metas
-- ✅ Cards com progresso visual
-- ✅ Percentual de conclusão
-- ✅ Histórico de aportes
-- ✅ Filtros por status, ordem, ano, categoria
+## ✨ Principais Funcionalidades
 
-### 6. Dívidas
-- ✅ Listagem com informações completas
-- ✅ Registro de parcelas pagas
-- ✅ Status automático (quitada, atrasada, a vencer, em aberto)
-- ✅ Filtros por status, juros, valor, busca
+As funcionalidades marcadas com 🚧 estão em produção, mas a arquitetura já está implementada.
 
-### 7. Contas Fixas
-- ✅ Tabela com contas de vencimento fixo mensal
-- ✅ Cálculo automático da próxima data
-- ✅ Status automático (pago, a pagar, atrasado)
-- ✅ Reset automático ao mudar de mês
-- ✅ Integração com gastos fixos e 50/30/20
-- ✅ Filtros por status, dia, categoria, valor, busca
+### Módulos Principais
+* ✅ **Autenticação:** Login, Cadastro, Logout e Proteção de Rotas.
+* ✅ **Dashboard:** Indicadores principais (Entradas, Saídas, Saldo), Relatório 50/30/20.
+* ✅ **Entradas:** Tabela mensal, modal de CRUD, filtros avançados.
+* ✅ **Gastos:** Categorização em Fixos, Variáveis e Extras, sinalização 50/30/20.
 
-### 8. Dicas de IA
-- ✅ Análise inteligente do controle financeiro
-- ✅ Sugestões personalizadas
-- ✅ Alertas de gastos excessivos
-- ✅ Recomendações sobre 50/30/20
-- ✅ Dicas para melhorar metas
-- ✅ Auxílio na organização de dívidas e contas fixas
+### Recursos em Produção
+* 🚧 **Metas:** Cards com progresso visual e histórico de aportes.
+* 🚧 **Dívidas:** Listagem, registro de parcelas pagas e status automático (quitada, atrasada, a vencer).
+* 🚧 **Contas Fixas:** Tabela com cálculo da próxima data, status automático e reset mensal.
 
-## 📦 Instalação
-
-1. Clone o repositório ou extraia os arquivos
-2. Instale as dependências:
-
-```bash
-npm install
-```
-
-3. Inicie o servidor de desenvolvimento:
-
-```bash
-npm run dev
-```
-
-4. Acesse `http://localhost:5173` no navegador
-
-## 🏗️ Build para Produção
-
-```bash
-npm run build
-```
-
-Os arquivos serão gerados na pasta `dist`.
-
-## 📝 Uso
-
-1. **Cadastro**: Crie uma conta com nome, email e senha
-2. **Login**: Faça login com suas credenciais
-3. **Dashboard**: Visualize o resumo financeiro do mês
-4. **Entradas**: Registre suas fontes de renda
-5. **Gastos**: Registre seus gastos nas categorias apropriadas
-6. **Metas**: Defina e acompanhe suas metas financeiras
-7. **Dívidas**: Gerencie suas dívidas e parcelas
-8. **Contas Fixas**: Cadastre contas com vencimento mensal fixo
-9. **Dicas IA**: Obtenha análises e recomendações personalizadas
-
-## 🔒 Segurança
-
-- Todos os dados são armazenados localmente no navegador (IndexedDB)
-- Nenhum dado é enviado para servidores externos
-- As senhas são armazenadas em texto simples (para uso local apenas - não recomendado para produção)
+### Funcionalidade de Demonstração
+* 🚧 **Dicas de IA:** Análise inteligente simulada do controle financeiro, sugestões personalizadas e alertas de gastos excessivos (Implementado com análise local, não é uma IA real/externa).
 
 ## 📊 Regra 50/30/20
 
-O sistema utiliza a regra 50/30/20 para organização financeira:
-- **50%** para Necessidades (gastos fixos)
-- **30%** para Estilo de Vida (gastos variáveis)
-- **20%** para Investimentos/Metas (extras)
+O sistema utiliza e monitora ativamente a regra 50/30/20:
+* **50%** para Necessidades (gastos fixos)
+* **30%** para Estilo de Vida (gastos variáveis)
+* **20%** para Investimentos/Metas (extras)
 
-O sistema calcula automaticamente e sinaliza quando você está acima ou abaixo dos limites recomendados.
+O sistema oferece cálculo automático e sinalização visual clara quando os limites são atingidos ou excedidos.
 
-## 🎨 Interface
+## 📦 Como Rodar o Projeto Localmente
 
-A interface foi desenvolvida com Tailwind CSS, proporcionando:
-- Design moderno e responsivo
-- Cores intuitivas (verde para entradas, vermelho para saídas)
-- Sinalização visual para status e alertas
-- Navegação fluida entre páginas
+1.  **Clone o repositório:**
+    ```bash
+    git clone [Link do seu repositório]
+    ```
 
-## 📱 Responsividade
+2.  **Acesse o diretório do projeto:**
+    ```bash
+    cd [Nome do seu projeto]
+    ```
 
-O sistema é totalmente responsivo e funciona bem em:
-- Desktop
-- Tablet
-- Mobile
+3.  **Instale as dependências:**
+    ```bash
+    npm install
+    ```
 
-## 🔄 Atualizações Automáticas
+4.  **Inicie o servidor de desenvolvimento:**
+    ```bash
+    npm run dev
+    ```
 
-- Contas fixas são atualizadas automaticamente ao mudar de mês
-- Status de dívidas é calculado automaticamente
-- Próximas datas são recalculadas conforme necessário
+O aplicativo estará acessível em `http://localhost:5173`.
 
-## 💡 Dicas de Uso
+## 🔒 Segurança (Contexto de Portfólio)
 
-1. Registre todas as suas entradas e gastos para análises precisas
-2. Use as contas fixas para automatizar o controle de despesas recorrentes
-3. Acompanhe regularmente as dicas de IA para melhorar seu controle financeiro
-4. Defina metas realistas e faça aportes regulares
-5. Mantenha suas dívidas organizadas e priorize o pagamento das de maior juros
+* Todos os dados são armazenados **localmente** no navegador (IndexedDB) para fins de demonstração.
+* **Atenção**: As senhas são armazenadas em texto simples. **Isso é intencional para fins de portfólio/uso local e não é uma prática recomendada em ambiente de produção real.**
 
-## 🐛 Problemas Conhecidos
+## 🐛 Problemas Conhecidos (Contexto de Demonstração)
 
-- As senhas são armazenadas em texto simples (apenas para uso local)
-- A IA utiliza análise local simulada (não é uma IA real)
+* A funcionalidade "Dicas de IA" utiliza uma **análise local simulada** para oferecer recomendações, não se conectando a um modelo de Machine Learning externo.
+
+## 🤝 Contribuições
+
+Este projeto foi desenvolvido por [Seu Nome/GitHub] e representa uma demonstração das minhas habilidades técnicas em desenvolvimento frontend e arquitetura de aplicações.
 
 ## 📄 Licença
 
-Este projeto é de código aberto e está disponível para uso pessoal.
+Este projeto é de código aberto e está disponível para uso e estudo pessoal.
 
 ---
 
-Desenvolvido com ❤️ usando React e tecnologias modernas.
-
+**Desenvolvido com ❤️ usando React e tecnologias modernas.**
